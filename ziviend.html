@@ -3,7 +3,7 @@
 <script type="text/javascript">
 x = document.getElementById("t");
 
-
+date = new Date(2022, 9, 30, 0, 0, 0, 0);
 x.innerHTML="4";
 
 function parseDate(input) {
@@ -12,7 +12,7 @@ function parseDate(input) {
   return new Date(parts[0], parts[1]-1, parts[2]); // Note: months are 0-based
 }
 
-const interval = setInterval(function(input) {    
+const interval = setInterval(function(date) {    
     var inputDate = parseDate(input);
     var today = new Date();
     var timeDiff = Math.abs(inputDate.getTime() - today.getTime());
