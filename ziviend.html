@@ -6,7 +6,8 @@ x = document.getElementById("t");
 date = new Date(2022, 9, 30, 0, 0, 0, 0);
 x.innerHTML="4";
 
-const interval = setInterval(function() {    
+const interval = setInterval(function() {
+    date = new Date(2022, 9, 30, 0, 0, 0, 0);
     var timeDiff = Math.abs(date.getTime() - today.getTime());
     x.innerHTML = Math.ceil(timeDiff / (1000*3600*24));
 },1000);
