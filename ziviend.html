@@ -12,12 +12,12 @@ function parseDate(input) {
   return new Date(parts[0], parts[1]-1, parts[2]); // Note: months are 0-based
 }
 
-const interval = setInterval(function(date) {    
-    var inputDate = parseDate(input);
+const interval = setInterval(function() {    
+    var inputDate = parseDate(date);
     var today = new Date();
     var timeDiff = Math.abs(inputDate.getTime() - today.getTime());
     x.innerHTML = Math.ceil(timeDiff / (1000*3600*24));
-};1000)
+};1000);
 
 
 
