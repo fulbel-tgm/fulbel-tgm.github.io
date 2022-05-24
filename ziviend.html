@@ -3,11 +3,10 @@
 <script type="text/javascript">
 x = document.getElementById("t");
 
-date = new Date(2022, 8, 30, 0, 0, 0, 0);
-x.innerHTML="4";
+x.innerHTML="";
 
 const interval = setInterval(function() {
-    date = new Date(2022, 9, 30, 0, 0, 0, 0);
+    date = new Date(2022, 8, 30, 0, 0, 0, 0);
     today = new Date();
     var timeDiff = Math.abs(date.getTime() - today.getTime());
      days = (Math.floor(timeDiff / (1000*3600*24)));
